@@ -1,4 +1,5 @@
 -- luacheck: globals vim
+-- TODO
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 

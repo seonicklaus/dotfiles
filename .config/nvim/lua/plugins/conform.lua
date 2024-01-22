@@ -10,7 +10,7 @@ return {
 			javascript = { { "prettierd", "prettier" } },
 			typescript = { { "prettierd", "prettier" } },
 			svelte = { { "prettierd", "prettier" } },
-			go = { "gofumpt", "goimports", "goimports-reviser" },
+			go = { "gofumpt", "goimports", "goimports-reviser", "golines" },
 			templ = { "templ" },
 		},
 		format_on_save = {
