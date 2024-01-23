@@ -117,6 +117,7 @@ export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:$HOME/.tmuxifier/bin
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias lzfig='lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(tmuxifier init -)"
