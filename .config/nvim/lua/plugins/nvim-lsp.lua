@@ -19,6 +19,7 @@ return {
 				"gopls",
 				"html",
 				"htmx",
+				"jsonls",
 				"rust_analyzer",
 				"sqlls",
 				"svelte",
@@ -56,6 +57,10 @@ return {
 
 		require("mason-lspconfig").setup_handlers({
 			function(server_name)
+				if server_name == "rust_analyzer" then
+					return
+				end
+
 				local opts = {
 					on_attach = on_attach,
 					capabilities = capabilities,
