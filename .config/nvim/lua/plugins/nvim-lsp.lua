@@ -61,7 +61,7 @@ return {
 					capabilities = capabilities,
 				}
 
-				local require_ok, conf_opts = pcall(require, "lua.plugins.settings." .. server_name)
+				local require_ok, conf_opts = pcall(require, "plugins.settings." .. server_name)
 				if require_ok then
 					opts = vim.tbl_deep_extend("force", conf_opts, opts)
 				end
