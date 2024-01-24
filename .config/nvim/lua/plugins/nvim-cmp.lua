@@ -62,7 +62,7 @@ return {
 			}),
 			formatting = {
 				format = function(entry, item)
-					local icons = require("lua.plugins.settings.nvim-cmp")
+					local icons = require("plugins.settings.nvim-cmp").icons
 					if icons[item.kind] then
 						item.kind = icons[item.kind] .. item.kind
 					end
