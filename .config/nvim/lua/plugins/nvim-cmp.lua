@@ -60,6 +60,22 @@ return {
 					"s",
 				}),
 			}),
+			formatting = {
+				format = function(entry, item)
+					local icons = require("lua.plugins.settings.nvim-cmp")
+					if icons[item.kind] then
+						item.kind = icons[item.kind] .. item.kind
+					end
+					item.menu = ({
+						nvim_lsp = "[LSP]",
+						luasnip = "[Snippet]",
+						buffer = "[Buffer]",
+						path = "[Path]",
+						crates = "[Crates]",
+					})[entry.source.name]
+					return item
+				end,
+			},
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" }, -- lsp
 				{ name = "luasnip" }, -- snippets
