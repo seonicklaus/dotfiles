@@ -122,3 +122,4 @@ alias lzfig='lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(tmuxifier init -)"
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
