@@ -10,8 +10,8 @@ return {
 		local lint = require("lint")
 
 		lint.linters_by_ft = {
-			javascript = { "eslint_d" },
-			typescript = { "eslint_d" },
+			javascript = { "biome" },
+			typescript = { "biome" },
 			svelte = { "eslint_d" },
 			go = { "golangcilint" },
 			lua = { "luacheck" },

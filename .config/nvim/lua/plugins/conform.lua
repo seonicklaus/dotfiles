@@ -8,8 +8,8 @@ return {
 		formatters_by_ft = {
 			lua = { "stylua" },
 			javascript = { { "prettierd", "prettier" } },
-			typescript = { { "prettierd", "prettier" } },
-			svelte = { { "prettierd", "prettier" } },
+			typescript = { { "biome", "prettierd", "prettier" } },
+			svelte = { { "biome", "prettierd", "prettier" } },
 			go = { "gofumpt", "goimports", "goimports-reviser", "golines" },
 			templ = { "templ" },
 		},

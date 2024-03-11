@@ -26,6 +26,7 @@ return {
 				"tailwindcss",
 				"templ",
 				"tsserver",
+				"biome",
 			},
 		})
 
