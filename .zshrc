@@ -108,13 +108,24 @@ export EDITOR=nvim
 export BROWSER=wslview
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 
+# go
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:/usr/local/go/bin
+
+# executables
 export PATH=$PATH:/snap/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/squashfs-root/usr/bin
+
+# rust
 export PATH=$PATH:$HOME/.cargo/bin
+
+#tmuxifier
 export PATH=$PATH:$HOME/.tmuxifier/bin
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias lzfig='lazygit --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
@@ -123,3 +134,11 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(tmuxifier init -)"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+
+# pnpm
+export PNPM_HOME="/home/seo/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+# bun completions
+[ -s "/home/seo/.bun/_bun" ] && source "/home/seo/.bun/_bun"
+
